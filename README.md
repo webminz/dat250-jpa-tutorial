@@ -227,5 +227,27 @@ The `setUp()` method will create a few test entries. After the test entries are 
 
 ![Project overview](./structure.png)
 
+
+### Bonus: Banking/Credit Card example JPA
+
+Implement the domain model for credit cards similar to the Person-Address-Examples in the lecture on object-relational mappings.
+Pay close attention to the bidirectional associations in the domain model.
+
+![Class Diagram domain model](https://raw.githubusercontent.com/selabhvl/dat250public/master/expassignments/pictures/creditCard.svg)
+
+
+Questions:
+- Explain the used database and how/when it runs.
+- Can you provide the SQL used to create the table **Customer**?
+- Find a way to inspect the database tables being created and create a database schema in your report. Do the created tables correspond to your initial thoughts regarding the exercise?
+
+Persist the objects shown in the following object diagram into your database in the class **_CreditCardsMain_** of the project. If you need more knowledge about persistence management (entityManager-operations persist(), find(), etc...), look into the lecture notes of [Lecture 9](https://hvl.instructure.com/courses/28936/pages/lecture-9-persistence-management-and-queries-monday?module_item_id=819339).
+
+![Object Diagram](https://raw.githubusercontent.com/selabhvl/dat250public/master/expassignments/pictures/object-diagram.svg)
+
+Make sure the associated test case **_CreditCardsMainTest_** runs successfully. You are **not** allowed to change the test case!
+If you forked the repository correctly, tests are automatically run when you push your changes.
+
+
 ## Acknowledgements
 This tutorial is partly based on https://www.vogella.com/tutorials/JavaPersistenceAPI/article.html#example.
